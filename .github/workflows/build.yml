@@ -17,7 +17,5 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Set up Chocolatey
-        uses: crazy-max/ghaction-chocolatey@v1
       - name: Install project
         run: src/scripts/install.bat
