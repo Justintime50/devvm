@@ -2,3 +2,6 @@
 # Ignore Emacs autosaves
 *~
 \#*#
+vagrant
+*.log
+.DS_Store

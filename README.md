@@ -1,18 +1,41 @@
-# Vagrant
+<div align="center">
 
-My Vagrant setup to explore the platform.
+# Devvm
+
+A development virtual machine running on Vagrant.
+
+[![Build Status](https://github.com/Justintime50/devvm/workflows/build/badge.svg)](https://github.com/Justintime50/devvm/actions)
+[![Licence](https://img.shields.io/github/license/justintime50/devvm)](LICENSE)
+
+<img src="assets/showcase.png" alt="Showcase">
+
+</div>
+
+Vagrant uses a VM provider (`VirtualBox` in this instance) to spin up VM's as code. Share files between host and VM (the `src/vagrant` directory in this project is mapped to `/home/vagrant` in the devvm). The `bootstrap.sh` file is run on each provision based on instructions found in the Vagrantfile.
 
 ## Install
 
-* Vagrant: https://www.vagrantup.com/downloads
-* VirtualBox: https://www.virtualbox.org
+**macOS and Linux**
+
+The installer assumes you have `Homebrew` installed.
+
+```bash
+./scripts/install.sh
+```
+
+**Windows**
+
+The installer assumes you have `Chocolatey` installed.
+
+```batch
+scripts\install.bat
+```
 
 ## Usage
 
-```bash
-# Start in the `src` directory
-cd src
+Run Vagrant commands from the `src` directory.
 
+```bash
 # Setup a new Vagrantfile
 vagrant init
 
@@ -27,12 +50,17 @@ vagrant halt
 
 # Destroy all traces of the VM
 vagrant destroy
+
+# Reload and reprovision the machine
+vagrant reload --provision
 ```
-
-## How it Works
-
-Vagrant uses a VM provider (VirtualBox in this instance) to spin up VM's as code. Share files between host and VM. The `bootstrap.sh` file is run on each provision based on instructions found in the Vagrantfile.
 
 ## Resources
 
-* https://www.vagrantup.com/intro/getting-started
+* [Vagrant Getting Started Guide](https://www.vagrantup.com/intro/getting-started)
+* [Download Vagrant](https://www.vagrantup.com/downloads)
+* [Download VirtualBox](https://www.virtualbox.org)
+
+## Attribution
+
+* Icons made by <a href="" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
