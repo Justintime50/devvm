@@ -20,7 +20,7 @@ Vagrant uses a VM provider (`VirtualBox` in this instance) to spin up VM's as co
 The installer assumes you have `Homebrew` installed.
 
 ```bash
-./scripts/install.sh
+./src/scripts/install.sh
 ```
 
 **Windows**
@@ -28,7 +28,7 @@ The installer assumes you have `Homebrew` installed.
 The installer assumes you have `Chocolatey` installed.
 
 ```batch
-scripts\install.bat
+src\scripts\install.bat
 ```
 
 ## Usage

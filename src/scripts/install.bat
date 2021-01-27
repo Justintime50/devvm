@@ -16,7 +16,7 @@ EXIT /B 0
 EXIT /B 0
 
 :setup_vagrant
-    cd ../src
+    cd src
     vagrant up
 EXIT /B 0
 

@@ -12,12 +12,12 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@master
       - name: Install project
         run: ./src/scripts/install.sh
-  install-ubuntu:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-      - name: Install project
-        run: ./src/scripts/install.sh
+  # install-windows:
+  #   runs-on: windows-latest
+  #   steps:
+  #     - name: Checkout Repository
+  #       uses: actions/checkout@v2
+  #     - name: Set up Chocolatey
+  #       uses: TODO
+  #     - name: Install project
+  #       run: src/scripts/install.bat

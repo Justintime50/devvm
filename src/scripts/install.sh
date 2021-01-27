@@ -15,7 +15,7 @@ install_dependencies() {
 }
 
 setup_vagrant() {
-    cd ../src || exit 1
+    cd src || exit 1
     vagrant up
 }
 
