@@ -3,10 +3,10 @@
     @echo off
     
     echo Installing dependencies...
-    install_dependencies
+    call :install_dependencies
     echo Dependencies installed!
 
-    setup_vagrant
+    call :setup_vagrant
     echo Devvm now running! Use `vagrant ssh` to connect.
 EXIT /B 0
 
