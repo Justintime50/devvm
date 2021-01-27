@@ -6,7 +6,7 @@ main() {
     install_dependencies
     echo "Dependencies installed!"
     setup_vagrant
-    echo "Devvm now running! Use `vagrant ssh` to connect."
+    echo "Devvm now running! Use \"vagrant ssh\" to connect."
 }
 
 install_dependencies() {

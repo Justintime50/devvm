@@ -36,19 +36,16 @@ src\scripts\install.bat
 Run Vagrant commands from the `src` directory.
 
 ```bash
-# Setup a new Vagrantfile
-vagrant init
-
-# Start machine
+# Start the machine
 vagrant up
 
-# Login to machine
+# Login to the machine
 vagrant ssh
 
 # Gracefully stop the machine
 vagrant halt
 
-# Destroy all traces of the VM
+# Destroy all traces of the machine
 vagrant destroy
 
 # Reload and reprovision the machine

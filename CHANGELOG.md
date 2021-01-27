@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.1.1 (2021-01-26)
+
+* Fixes Windows installer
+* Adds Windows and macOS builds to ensure installation scripts work correctly
+* Add Shellcheck linting
+
 ## v0.1.0 (2021-01-26)
 
 * Initial release
